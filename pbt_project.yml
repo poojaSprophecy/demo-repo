@@ -9,10 +9,10 @@ pipelines: {}
 datasets: {}
 templates: {}
 jobs:
-  jobs/failed_orderes_report:
-    name: failed_orderes_report
+  jobs/demo-job:
+    name: demo-job
     description: ''
-    fabricUID: 2780
+    fabricUID: 2791
     scheduler:
       Prophecy: {}
     cloudProvider: null
@@ -30,7 +30,7 @@ jobs:
         Single: {}
       clusterId: null
     enabled: true
-    createdAt: '2023-06-23 09:07:50'
+    createdAt: '2023-06-23 10:02:57'
     author: poojas+2@prophecy.io
 functions:
   author: null

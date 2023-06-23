@@ -3,7 +3,7 @@ def DBT_0():
     from datetime import timedelta
     from airflow.operators.bash import BashOperator
     envs = {}
-    envs["DBT_PROFILE_SECRET"] = "3yz9Z33Y6NRdI9BHib6IR"
+    envs["DBT_PROFILE_SECRET"] = "9x5yQUXQzq_2_WULmyqpP"
     envs["GIT_TOKEN_SECRET"] = ""
     envs["GIT_ENTITY"] = "branch"
     envs["GIT_ENTITY_VALUE"] = "dev-snowflake"
