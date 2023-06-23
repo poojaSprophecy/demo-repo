@@ -1,0 +1,32 @@
+name: sql_snowflake
+description: ''
+version: 0.0.1
+author: null
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+functions:
+  author: null
+  createdAt: '2023-06-23 06:43:28'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: poojas+2@prophecy.io
+  createdAt: '2023-06-23 06:43:28'
+dependencies: '[]'
+projectDependencies: {}
+pipelineConfigurations: {}
