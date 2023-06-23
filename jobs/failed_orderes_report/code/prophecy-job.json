@@ -1,0 +1,122 @@
+{
+  "metainfo" : {
+    "type" : "Prophecy",
+    "fabricId" : "2780",
+    "jobId" : "jobs/failed_orderes_report",
+    "name" : "failed_orderes_report",
+    "dagName" : "4hPZVPkUjCUBkE2_ZsBdhg_",
+    "schedule" : "0 0/1 * * *",
+    "enabled" : true,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "pool" : "rr-Rsvq8",
+      "do_xcom_push" : true
+    },
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "availableFabrics" : [ {
+      "id" : "2137",
+      "name" : "airflow-demo"
+    }, {
+      "id" : "2780",
+      "name" : "PM-airflow",
+      "trialStartDate" : 1687495241758
+    } ],
+    "catchup" : true,
+    "endDate" : "2023-07-14",
+    "scheduleTimeZone" : "UTC"
+  },
+  "processes" : {
+    "4wImcb-S3veIX9kXHvSuQ$$JNaZez9ssUSij-Jbkr_bj" : {
+      "id" : "4wImcb-S3veIX9kXHvSuQ$$JNaZez9ssUSij-Jbkr_bj",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : 340,
+        "y" : 440
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "x-B5hQnkT2PB6oEysEX6d$$X8Uv4GVgI1L7T3Cbypaaw",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "tGR6iecqxvj40OqImgYct$$Evv4opzGeZMweRSOq_Ivg",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : false,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "8802",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "2786",
+        "gitEntityValue" : "dev-snowflake",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "models" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "Failed_orders",
+          "value" : "Failed_orders",
+          "id" : "8802/.prophecy/metadata/sqlmodels/Failed_orders",
+          "name" : "Failed_orders"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      }
+    }
+  },
+  "connections" : [ ]
+}

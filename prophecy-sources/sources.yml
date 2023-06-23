@@ -1,0 +1,75 @@
+---
+version: 2
+sources:
+- name: "POOJA.JAFFLE_SHOP"
+  database: "POOJA"
+  schema: "JAFFLE_SHOP"
+  config:
+    enabled: true
+  tables:
+  - name: "CUSTOMERS"
+    columns:
+    - name: "ORDER_ID"
+      dataType:
+        type: "Number"
+    - name: "ORDER_DATE"
+      dataType:
+        type: "Date"
+    - name: "STATUS"
+      dataType:
+        type: "String"
+    - name: "FIRST_NAME"
+      dataType:
+        type: "String"
+    - name: "LAST_NAME"
+      dataType:
+        type: "String"
+    - name: "CUSTOMER_ID"
+      dataType:
+        type: "Number"
+  - name: "ORDERS"
+    columns:
+    - name: "ID"
+      dataType:
+        type: "Number"
+    - name: "USER_ID"
+      dataType:
+        type: "Number"
+    - name: "ORDER_DATE"
+      dataType:
+        type: "Date"
+    - name: "STATUS"
+      dataType:
+        type: "String"
+    - name: "_ETL_LOADED_AT"
+      dataType:
+        type: "Timestamp"
+- name: "POOJA.STRIPE"
+  database: "POOJA"
+  schema: "STRIPE"
+  config:
+    enabled: true
+  tables:
+  - name: "PAYMENT"
+    columns:
+    - name: "ID"
+      dataType:
+        type: "Number"
+    - name: "ORDERID"
+      dataType:
+        type: "Number"
+    - name: "PAYMENTMETHOD"
+      dataType:
+        type: "String"
+    - name: "STATUS"
+      dataType:
+        type: "String"
+    - name: "AMOUNT"
+      dataType:
+        type: "Number"
+    - name: "CREATED"
+      dataType:
+        type: "Date"
+    - name: "_BATCHED_AT"
+      dataType:
+        type: "Timestamp"
