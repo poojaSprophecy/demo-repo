@@ -1,0 +1,16 @@
+---
+version: 2
+macros:
+- name: "dummy_gem"
+  arguments:
+  - name: "test"
+    type: "value"
+    description: "{\"ProphecyType\": \"value\"}"
+  macroType: "expression"
+- name: "maro1"
+  description: "efef"
+  arguments:
+  - name: "wdwd"
+    type: "value"
+    description: "{\"ProphecyType\": \"value\"}"
+  macroType: "expression"

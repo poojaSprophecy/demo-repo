@@ -1,0 +1,50 @@
+{
+  "maro1" : {
+    "name" : "maro1",
+    "macroType" : "expression",
+    "definition" : "url_encode(str)",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "wdwd",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      } ]
+    },
+    "description" : "efef",
+    "staleState" : "none",
+    "propertiesFile" : {
+      "name" : "macros",
+      "content" : "---\nversion: 2\nmacros:\n- name: \"dummy_gem\"\n  arguments:\n  - name: \"test\"\n    type: \"value\"\n    description: \"{\\\"ProphecyType\\\": \\\"value\\\"}\"\n  macroType: \"expression\"\n- name: \"maro1\"\n  description: \"efef\"\n  arguments:\n  - name: \"wdwd\"\n    type: \"value\"\n    description: \"{\\\"ProphecyType\\\": \\\"value\\\"}\"\n  macroType: \"expression\"\n",
+      "path" : "sql_dbx_project/macros/macros.yml",
+      "projectConfiguration" : null,
+      "folderConfiguration" : {
+        "version" : 2,
+        "macros" : [ {
+          "name" : "dummy_gem",
+          "arguments" : [ {
+            "name" : "test",
+            "type" : "value",
+            "description" : "{\"ProphecyType\": \"value\"}"
+          } ],
+          "macroType" : "expression"
+        }, {
+          "name" : "maro1",
+          "description" : "efef",
+          "arguments" : [ {
+            "name" : "wdwd",
+            "type" : "value",
+            "description" : "{\"ProphecyType\": \"value\"}"
+          } ],
+          "macroType" : "expression"
+        } ]
+      },
+      "packagesYml" : null,
+      "editable" : true
+    }
+  }
+}

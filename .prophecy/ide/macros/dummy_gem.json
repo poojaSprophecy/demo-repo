@@ -1,0 +1,41 @@
+{
+  "dummy_gem" : {
+    "name" : "dummy_gem",
+    "macroType" : "query",
+    "definition" : "encode(expr, charSet)",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "test",
+        "kind" : {
+          "type" : "value",
+          "value" : "esr"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      } ]
+    },
+    "staleState" : "none",
+    "propertiesFile" : {
+      "name" : "macros",
+      "content" : "---\nversion: 2\nmacros:\n- name: \"dummy_gem\"\n  arguments:\n  - name: \"test\"\n    type: \"value\"\n    description: \"{\\\"ProphecyType\\\": \\\"value\\\"}\"\n  macroType: \"query\"\n",
+      "path" : "sql_dbx_project/macros/macros.yml",
+      "projectConfiguration" : null,
+      "folderConfiguration" : {
+        "version" : 2,
+        "macros" : [ {
+          "name" : "dummy_gem",
+          "arguments" : [ {
+            "name" : "test",
+            "type" : "value",
+            "description" : "{\"ProphecyType\": \"value\"}"
+          } ],
+          "macroType" : "query"
+        } ]
+      },
+      "packagesYml" : null,
+      "editable" : true
+    }
+  }
+}

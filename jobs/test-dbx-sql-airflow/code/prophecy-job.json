@@ -1,0 +1,128 @@
+{
+  "metainfo" : {
+    "type" : "Composer",
+    "fabricId" : "6493",
+    "jobId" : "jobs/test-dbx-sql-airflow",
+    "name" : "test-dbx-sql-airflow",
+    "dagName" : "uitesting_poojas_sql_dbx_project_test_dbx_sql_airflow",
+    "schedule" : "0 0/1 * * *",
+    "enabled" : false,
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "ignore_first_depends_on_past" : true,
+      "do_xcom_push" : true
+    },
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "availableFabrics" : [ {
+      "id" : "6493",
+      "name" : "test-airflow"
+    }, {
+      "id" : "7279",
+      "name" : "MWAA"
+    }, {
+      "id" : "10119",
+      "name" : "demo-fabric",
+      "trialStartDate" : 1691570990207
+    } ],
+    "catchup" : true,
+    "scheduleTimeZone" : "UTC"
+  },
+  "processes" : {
+    "F7p6dKNC3l0QtRwT8i6cS$$EO8K5MXl4-kcI3GxFOIzm" : {
+      "id" : "F7p6dKNC3l0QtRwT8i6cS$$EO8K5MXl4-kcI3GxFOIzm",
+      "component" : "DBT",
+      "metadata" : {
+        "label" : "DBT_0",
+        "slug" : "DBT_0",
+        "x" : 300,
+        "y" : 420
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "2aJlVFiSGws3CVIlD539V$$XScfno7jxp__NQckm5Y2Q",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "GiuWfGDiNSZtPoPJ2JI8G$$4DhmZFw7iRQwsPHUXWPla",
+          "slug" : ""
+        } ]
+      },
+      "settings" : { },
+      "properties" : {
+        "cacheSelectedOnly" : null,
+        "gitSubPath" : null,
+        "runModelWithParents" : false,
+        "defer" : null,
+        "noDefer" : null,
+        "runSeed" : false,
+        "gitEntity" : "branch",
+        "noPartialParse" : null,
+        "warnErrorOptions" : null,
+        "gitTokenSecret" : null,
+        "state" : null,
+        "useExperimentalParser" : null,
+        "gitSshUrl" : null,
+        "indirectSelection" : null,
+        "partialParse" : null,
+        "runRun" : true,
+        "vars" : null,
+        "noPrint" : null,
+        "quiet" : null,
+        "projectId" : "27973",
+        "runOnlyModel" : false,
+        "favorState" : null,
+        "failFast" : null,
+        "noStaticParser" : null,
+        "runTest" : true,
+        "select" : null,
+        "recordTimingInfo" : null,
+        "fullRefresh" : null,
+        "noCacheSelectedOnly" : null,
+        "noFavorState" : null,
+        "isProphecyManaged" : false,
+        "profile" : null,
+        "noVersionCheck" : null,
+        "noWriteJson" : false,
+        "printerWidth" : null,
+        "sqlFabricId" : "7385",
+        "gitEntityValue" : "dev3",
+        "logFormat" : null,
+        "runModelWithChildren" : false,
+        "dbtProfileSecret" : null,
+        "models" : null,
+        "target" : null,
+        "exclude" : null,
+        "runDeps" : false,
+        "noAnonymousUsageStats" : null,
+        "selector" : null,
+        "targetPath" : null,
+        "threads" : null,
+        "warnError" : null,
+        "currentProjectModels" : [ {
+          "label" : "test_model",
+          "value" : "test_model",
+          "id" : "27973/.prophecy/metadata/sqlmodels/test_model",
+          "name" : "test_model"
+        }, {
+          "label" : "test-model",
+          "value" : "test-model",
+          "id" : "27973/.prophecy/metadata/sqlmodels/test-model",
+          "name" : "test-model"
+        } ],
+        "profilesDir" : null,
+        "taskId" : null,
+        "logPath" : null,
+        "storeFailures" : null
+      }
+    }
+  },
+  "connections" : [ ]
+}

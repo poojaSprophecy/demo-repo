@@ -8,27 +8,494 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/test-dbx-sql-airflow:
+    name: test-dbx-sql-airflow
+    description: ''
+    fabricUID: 6493
+    scheduler:
+      Composer: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-06-16 10:25:17'
+    author: poojas@prophecy.io
+  jobs/test-dbx-pm-airflow:
+    name: test-dbx-pm-airflow
+    description: ''
+    fabricUID: 7116
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-06-16 10:26:05'
+    author: poojas@prophecy.io
+  jobs/test-dbx:
+    name: test-dbx
+    description: ''
+    fabricUID: 5577
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-07-25 09:36:46'
+    author: poojas@prophecy.io
+  jobs/demo-job:
+    name: demo-job
+    description: ''
+    fabricUID: 11511
+    scheduler:
+      Prophecy: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: 0 0/1 * * *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2023-09-19 17:23:49'
+    author: poojas@prophecy.io
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
 functions:
   author: null
   createdAt: '2023-06-16 10:07:07'
-  modifiedAt: '2023-06-16 10:07:07'
-  gems: {}
   udfs: {}
   udafs: {}
   expressions: {}
 subgraphs: {}
-sqlModels: {}
-sqlMacros: {}
-sqlSeeds: {}
-sqlSources: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/demo_model:
+    name: demo_model
+    schema:
+      providerType: Databricks
+      fields:
+      - name: n_nationkey
+        dataType:
+          type: Bigint
+      - name: n_name
+        dataType:
+          type: String
+      - name: n_regionkey
+        dataType:
+          type: Bigint
+      - name: n_comment
+        dataType:
+          type: String
+      - name: c_address
+        dataType:
+          type: String
+      - name: c_phone
+        dataType:
+          type: String
+      - name: c_name
+        dataType:
+          type: String
+      - name: c_comment
+        dataType:
+          type: String
+      - name: c_nationkey
+        dataType:
+          type: Bigint
+      - name: c_mktsegment
+        dataType:
+          type: String
+      - name: c_custkey
+        dataType:
+          type: Bigint
+      - name: c_acctbal
+        dataType:
+          type: Decimal
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - models/demo_model.sql
+    - .prophecy/ide/models/demo_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-09-21 06:03:08'
+  .prophecy/metadata/sqlmodels/new_model:
+    name: new_model
+    schema:
+      providerType: Databricks
+      fields:
+      - name: c_custkey
+        dataType:
+          type: Bigint
+      - name: c_name
+        dataType:
+          type: String
+      - name: c_address
+        dataType:
+          type: String
+      - name: c_nationkey
+        dataType:
+          type: Bigint
+      - name: c_phone
+        dataType:
+          type: String
+      - name: c_acctbal
+        dataType:
+          type: Decimal
+      - name: c_mktsegment
+        dataType:
+          type: String
+      - name: c_comment
+        dataType:
+          type: String
+      - name: n_nationkey
+        dataType:
+          type: Bigint
+      - name: n_name
+        dataType:
+          type: String
+      - name: n_regionkey
+        dataType:
+          type: Bigint
+      - name: n_comment
+        dataType:
+          type: String
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - models/new_model.sql
+    - .prophecy/ide/models/new_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-09-13 10:21:14'
+  .prophecy/metadata/sqlmodels/test_model:
+    name: test_model
+    schema:
+      providerType: Databricks
+      fields:
+      - name: c_custkey
+        dataType:
+          type: Bigint
+      - name: c_name
+        dataType:
+          type: String
+      - name: c_address
+        dataType:
+          type: String
+      - name: c_nationkey
+        dataType:
+          type: Bigint
+      - name: c_phone
+        dataType:
+          type: String
+      - name: c_acctbal
+        dataType:
+          type: Decimal
+      - name: c_mktsegment
+        dataType:
+          type: String
+      - name: c_comment
+        dataType:
+          type: String
+      - name: n_nationkey
+        dataType:
+          type: Bigint
+      - name: n_name
+        dataType:
+          type: String
+      - name: n_regionkey
+        dataType:
+          type: Bigint
+      - name: n_comment
+        dataType:
+          type: String
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - models/test_model.sql
+    - .prophecy/ide/models/test_model.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-16 10:14:12'
+sqlMacros:
+  .prophecy/metadata/sqlmacros/dummy_gem:
+    name: dummy_gem
+    macroType: expression
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - macros/dummy_gem.sql
+    - .prophecy/ide/macros/dummy_gem.json
+    - macros/macros.yml
+    createdAt: '2023-09-26 05:39:43'
+  .prophecy/metadata/sqlmacros/maro1:
+    name: maro1
+    macroType: expression
+    description: efef
+    author: poojas@prophecy.io
+    files:
+    - macros/maro1.sql
+    - .prophecy/ide/macros/maro1.json
+    - macros/macros.yml
+    createdAt: '2023-09-26 16:28:37'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/test_Seed:
+    name: test_Seed
+    schema:
+      providerType: Databricks
+      fields:
+      - name: test_1
+        dataType:
+          type: Integer
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - seeds/test_Seed.csv
+    createdAt: '2023-09-15 09:29:22'
+sqlSources:
+  .prophecy/metadata/sqlsources/hive_metastore_default:
+    name: hive_metastore.default
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-06-16 10:22:12'
+    tables:
+    - name: test_model
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_custkey
+          dataType:
+            type: Bigint
+        - name: c_name
+          dataType:
+            type: String
+        - name: c_address
+          dataType:
+            type: String
+        - name: c_nationkey
+          dataType:
+            type: Bigint
+        - name: c_phone
+          dataType:
+            type: String
+        - name: c_acctbal
+          dataType:
+            type: Decimal
+        - name: c_mktsegment
+          dataType:
+            type: String
+        - name: c_comment
+          dataType:
+            type: String
+        - name: n_nationkey
+          dataType:
+            type: Bigint
+        - name: n_name
+          dataType:
+            type: String
+        - name: n_regionkey
+          dataType:
+            type: Bigint
+        - name: n_comment
+          dataType:
+            type: String
+      description: null
+      author: poojas@prophecy.io
+      createdAt: '2023-06-16 10:22:12'
+  .prophecy/metadata/sqlsources/samples_tpch:
+    name: samples.tpch
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-06-16 10:13:03'
+    tables:
+    - name: customer
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_custkey
+          dataType:
+            type: Bigint
+        - name: c_name
+          dataType:
+            type: String
+        - name: c_address
+          dataType:
+            type: String
+        - name: c_nationkey
+          dataType:
+            type: Bigint
+        - name: c_phone
+          dataType:
+            type: String
+        - name: c_acctbal
+          dataType:
+            type: Decimal
+        - name: c_mktsegment
+          dataType:
+            type: String
+        - name: c_comment
+          dataType:
+            type: String
+      description: null
+      author: poojas@prophecy.io
+      createdAt: '2023-06-16 10:13:03'
+    - name: nation
+      schema:
+        providerType: databricks
+        fields:
+        - name: n_nationkey
+          dataType:
+            type: Bigint
+        - name: n_name
+          dataType:
+            type: String
+        - name: n_regionkey
+          dataType:
+            type: Bigint
+        - name: n_comment
+          dataType:
+            type: String
+      description: null
+      author: poojas@prophecy.io
+      createdAt: '2023-06-16 10:13:04'
+  .prophecy/metadata/sqlsources/spark_catalog_anya:
+    name: spark_catalog.anya
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-06-16 10:08:13'
+    tables:
+    - name: reportscd1
+      schema:
+        providerType: databricks
+        fields:
+        - name: Name
+          dataType:
+            type: String
+        - name: Income
+          dataType:
+            type: Bigint
+        - name: LoanTotal
+          dataType:
+            type: Bigint
+        - name: FicoScore
+          dataType:
+            type: Bigint
+        - name: FicoValidFrom
+          dataType:
+            type: Date
+        - name: FicoValidTo
+          dataType:
+            type: Date
+        - name: minFlag
+          dataType:
+            type: Boolean
+        - name: maxFlag
+          dataType:
+            type: Boolean
+        - name: previousFicoScore
+          dataType:
+            type: Bigint
+        - name: DTIpercentage
+          dataType:
+            type: Decimal
+      description: null
+      author: poojas@prophecy.io
+      createdAt: '2023-06-16 10:08:13'
+    - name: reportscd2
+      schema:
+        providerType: databricks
+        fields:
+        - name: Name
+          dataType:
+            type: String
+        - name: Income
+          dataType:
+            type: Bigint
+        - name: LoanTotal
+          dataType:
+            type: Bigint
+        - name: FicoScore
+          dataType:
+            type: Bigint
+        - name: FicoValidFrom
+          dataType:
+            type: Date
+        - name: FicoValidTo
+          dataType:
+            type: Date
+        - name: minFlag
+          dataType:
+            type: Boolean
+        - name: maxFlag
+          dataType:
+            type: Boolean
+        - name: previousFicoScore
+          dataType:
+            type: Bigint
+        - name: DTIpercentage
+          dataType:
+            type: Decimal
+      description: null
+      author: poojas@prophecy.io
+      createdAt: '2023-06-16 10:08:14'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
   description: null
   author: poojas@prophecy.io
   createdAt: '2023-06-16 10:07:07'
-  modifiedAt: '2023-06-16 10:07:07'
 dependencies: '[]'
 projectDependencies: {}
 pipelineConfigurations: {}
