@@ -9,11 +9,13 @@ pipelines: {}
 datasets: {}
 templates: {}
 jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
 functions:
   author: null
   createdAt: '2023-06-16 10:07:07'
-  modifiedAt: '2023-06-16 10:07:07'
-  gems: {}
   udfs: {}
   udafs: {}
   expressions: {}
@@ -28,7 +30,6 @@ sqlPipeline:
   description: null
   author: poojas@prophecy.io
   createdAt: '2023-06-16 10:07:07'
-  modifiedAt: '2023-06-16 10:07:07'
 dependencies: '[]'
 projectDependencies: {}
 pipelineConfigurations: {}
