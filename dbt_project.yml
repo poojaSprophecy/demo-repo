@@ -1,6 +1,7 @@
 # ==================
 # Project Details
 # ==================
+
 name: "sql_dbx_project"
 config-version: 2
 require-dbt-version:

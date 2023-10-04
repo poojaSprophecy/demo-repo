@@ -1,5 +1,5 @@
 {
-  "name" : "sql_dbx_project",
+  "name" : "sql_snowflake",
   "fileSystem" : {
     "type" : "Folder",
     "name" : "",
@@ -7,8 +7,8 @@
     "path" : "",
     "editable" : true
   },
-  "providerType" : "databricks",
-  "fabricId" : "11498",
+  "providerType" : "snowflake",
+  "fabricId" : "2786",
   "prophecyIDEFolder" : {
     "name" : "",
     "children" : { },
@@ -19,447 +19,277 @@
     "type" : "Project",
     "name" : "",
     "children" : [ {
-      "type" : "Catalog",
-      "name" : "hive_metastore",
+      "type" : "Database",
+      "name" : "ASHISH",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "CHETAN",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "JAFFLE_SHOP",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "KISHORE",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "MACIEJ",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "MEITEST",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "NTONG",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "POOJA",
       "children" : [ {
         "type" : "Schema",
-        "name" : "bronze",
+        "name" : "DBT_PSINGHAL",
         "children" : [ ]
       }, {
         "type" : "Schema",
-        "name" : "default",
+        "name" : "INFORMATION_SCHEMA",
+        "children" : [ ]
+      }, {
+        "type" : "Schema",
+        "name" : "JAFFLE_SHOP",
         "tables" : {
-          "customer_with_open_orders_jordan" : {
-            "providerType" : "Databricks",
+          "CUSTOMER_ORDERS1" : {
+            "providerType" : "Snowflake",
             "fields" : [ {
-              "name" : "n_name",
+              "name" : "TOTAL_AMOUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FULL_NAME",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "n_nationkey",
+              "name" : "CUSTOMER_ID",
               "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "o_orderkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "o_orderstatus",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_custkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "c_name",
-              "dataType" : {
-                "type" : "String"
+                "type" : "Number"
               }
             } ]
           },
-          "raw_customers" : {
-            "providerType" : "Databricks",
+          "CUSTOMERS" : {
+            "providerType" : "Snowflake",
             "fields" : [ {
-              "name" : "id",
+              "name" : "ORDER_ID",
               "dataType" : {
-                "type" : "Bigint"
+                "type" : "Number"
               }
             }, {
-              "name" : "first_name",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "last_name",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
-          "m2" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "o_orderkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "o_custkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "o_orderstatus",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "o_totalprice",
-              "dataType" : {
-                "type" : "Decimal"
-              }
-            }, {
-              "name" : "o_orderdate",
+              "name" : "ORDER_DATE",
               "dataType" : {
                 "type" : "Date"
               }
             }, {
-              "name" : "o_orderpriority",
+              "name" : "STATUS",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "o_clerk",
+              "name" : "FIRST_NAME",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "o_shippriority",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "o_comment",
+              "name" : "LAST_NAME",
               "dataType" : {
                 "type" : "String"
+              }
+            }, {
+              "name" : "CUSTOMER_ID",
+              "dataType" : {
+                "type" : "Number"
               }
             } ]
           },
-          "raw_orders" : {
-            "providerType" : "Databricks",
+          "ORDERS" : {
+            "providerType" : "Snowflake",
             "fields" : [ {
-              "name" : "id",
+              "name" : "ID",
               "dataType" : {
-                "type" : "Bigint"
+                "type" : "Number"
               }
             }, {
-              "name" : "user_id",
+              "name" : "USER_ID",
               "dataType" : {
-                "type" : "Bigint"
+                "type" : "Number"
               }
             }, {
-              "name" : "order_date",
+              "name" : "ORDER_DATE",
               "dataType" : {
                 "type" : "Date"
               }
             }, {
-              "name" : "status",
+              "name" : "STATUS",
               "dataType" : {
                 "type" : "String"
+              }
+            }, {
+              "name" : "_ETL_LOADED_AT",
+              "dataType" : {
+                "type" : "Timestamp"
               }
             } ]
           },
-          "raw_payments" : {
-            "providerType" : "Databricks",
+          "FAILED_ORDERS" : {
+            "providerType" : "Snowflake",
             "fields" : [ {
-              "name" : "id",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "order_id",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "payment_method",
+              "name" : "STATUS",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "amount",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            } ]
-          },
-          "stg_customers" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "customer_id",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "first_name",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "last_name",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
-          "m1" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "n_nationkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "n_name",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "n_regionkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "n_comment",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
-          "stg_orders" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "order_id",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "customer_id",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "order_date",
+              "name" : "ORDER_DATE",
               "dataType" : {
                 "type" : "Date"
               }
             }, {
-              "name" : "status",
+              "name" : "LAST_NAME",
               "dataType" : {
                 "type" : "String"
+              }
+            }, {
+              "name" : "FIRST_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ORDER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CUSTOMER_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "PAYMENTMETHOD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PAYMENT_STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AMOUNT",
+              "dataType" : {
+                "type" : "Number"
               }
             } ]
           },
-          "highest_revenue_region" : {
-            "providerType" : "Databricks",
+          "TOP_CUSTOMER" : {
+            "providerType" : "Snowflake",
             "fields" : [ {
-              "name" : "country_name",
+              "name" : "TOTAL_AMOUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FULL_NAME",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "o_totalprice",
+              "name" : "CUSTOMER_ID",
               "dataType" : {
-                "type" : "Decimal"
+                "type" : "Number"
               }
             } ]
           },
-          "stg_payments" : {
-            "providerType" : "Databricks",
+          "CUSTOMER_ORDERS" : {
+            "providerType" : "Snowflake",
             "fields" : [ {
-              "name" : "payment_id",
+              "name" : "ORDER_ID",
               "dataType" : {
-                "type" : "Bigint"
+                "type" : "Number"
               }
             }, {
-              "name" : "order_id",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "payment_method",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "amount",
-              "dataType" : {
-                "type" : "Double"
-              }
-            } ]
-          },
-          "customers" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "customer_id",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "first_name",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "last_name",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "first_order",
+              "name" : "ORDER_DATE",
               "dataType" : {
                 "type" : "Date"
               }
             }, {
-              "name" : "most_recent_order",
-              "dataType" : {
-                "type" : "Date"
-              }
-            }, {
-              "name" : "number_of_orders",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "customer_lifetime_value",
-              "dataType" : {
-                "type" : "Double"
-              }
-            } ]
-          },
-          "metrics_test_raw" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "_corrupt_record",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
-          "test_model" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "c_custkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "c_name",
+              "name" : "STATUS",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "c_address",
+              "name" : "FIRST_NAME",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "c_nationkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "c_phone",
+              "name" : "LAST_NAME",
               "dataType" : {
                 "type" : "String"
               }
             }, {
-              "name" : "c_acctbal",
+              "name" : "CUSTOMER_ID",
               "dataType" : {
-                "type" : "Decimal"
-              }
-            }, {
-              "name" : "c_mktsegment",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "c_comment",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "n_nationkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "n_name",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "n_regionkey",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "n_comment",
-              "dataType" : {
-                "type" : "String"
-              }
-            } ]
-          },
-          "countcustomers" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "country_id",
-              "dataType" : {
-                "type" : "Bigint"
-              }
-            }, {
-              "name" : "country_name",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "total_customers",
-              "dataType" : {
-                "type" : "Bigint"
+                "type" : "Number"
               }
             } ]
           }
         }
       }, {
         "type" : "Schema",
-        "name" : "meitest",
+        "name" : "POOJA_ANALYTICS",
         "children" : [ ]
       }, {
         "type" : "Schema",
-        "name" : "prophecy_",
+        "name" : "PUBLIC",
         "children" : [ ]
       }, {
         "type" : "Schema",
-        "name" : "prophecy_app",
-        "children" : [ ]
-      }, {
-        "type" : "Schema",
-        "name" : "prophecy_beta",
-        "children" : [ ]
-      }, {
-        "type" : "Schema",
-        "name" : "prophecy_uitesting",
+        "name" : "STRIPE",
         "children" : [ ]
       } ]
     }, {
-      "type" : "Catalog",
-      "name" : "main",
+      "type" : "Database",
+      "name" : "QA_DATABASE",
       "children" : [ ]
     }, {
-      "type" : "Catalog",
-      "name" : "samples",
-      "children" : [ {
-        "type" : "Schema",
-        "name" : "default",
-        "tables" : { }
-      }, {
-        "type" : "Schema",
-        "name" : "nyctaxi",
-        "children" : [ ]
-      }, {
-        "type" : "Schema",
-        "name" : "tpch",
-        "children" : [ ]
-      } ]
+      "type" : "Database",
+      "name" : "RJ",
+      "children" : [ ]
     }, {
-      "type" : "Catalog",
-      "name" : "system",
+      "type" : "Database",
+      "name" : "SNOWFLAKE",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "SNOWFLAKE_SAMPLE_DATA",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "TESTING",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "\"jaffle_shop\"",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "\"qa_database\"",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "\"qa_database_lower_case_only\"",
       "children" : [ ]
     } ]
   },
