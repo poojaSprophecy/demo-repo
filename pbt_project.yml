@@ -113,6 +113,47 @@ functions:
   expressions: {}
 subgraphs: {}
 sqlModels:
+  .prophecy/metadata/sqlmodels/Failed_orders:
+    name: Failed_orders
+    schema:
+      providerType: Snowflake
+      fields:
+      - name: STATUS
+        dataType:
+          type: String
+      - name: ORDER_DATE
+        dataType:
+          type: Date
+      - name: LAST_NAME
+        dataType:
+          type: String
+      - name: FIRST_NAME
+        dataType:
+          type: String
+      - name: ORDER_ID
+        dataType:
+          type: Number
+      - name: CUSTOMER_ID
+        dataType:
+          type: Number
+      - name: PAYMENTMETHOD
+        dataType:
+          type: String
+      - name: PAYMENT_STATUS
+        dataType:
+          type: String
+      - name: AMOUNT
+        dataType:
+          type: Number
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - models/Failed_orders.sql
+    - .prophecy/ide/models/Failed_orders.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-10-04 11:40:54'
   .prophecy/metadata/sqlmodels/demo_model:
     name: demo_model
     schema:
@@ -266,7 +307,7 @@ sqlModels:
 sqlMacros:
   .prophecy/metadata/sqlmacros/dummy_gem:
     name: dummy_gem
-    macroType: expression
+    macroType: query
     description: null
     author: poojas@prophecy.io
     files:
@@ -310,43 +351,7 @@ sqlSources:
     - name: test_model
       schema:
         providerType: databricks
-        fields:
-        - name: c_custkey
-          dataType:
-            type: Bigint
-        - name: c_name
-          dataType:
-            type: String
-        - name: c_address
-          dataType:
-            type: String
-        - name: c_nationkey
-          dataType:
-            type: Bigint
-        - name: c_phone
-          dataType:
-            type: String
-        - name: c_acctbal
-          dataType:
-            type: Decimal
-        - name: c_mktsegment
-          dataType:
-            type: String
-        - name: c_comment
-          dataType:
-            type: String
-        - name: n_nationkey
-          dataType:
-            type: Bigint
-        - name: n_name
-          dataType:
-            type: String
-        - name: n_regionkey
-          dataType:
-            type: Bigint
-        - name: n_comment
-          dataType:
-            type: String
+        fields: []
       description: null
       author: poojas@prophecy.io
       createdAt: '2023-06-16 10:22:12'
@@ -361,50 +366,14 @@ sqlSources:
     - name: customer
       schema:
         providerType: databricks
-        fields:
-        - name: c_custkey
-          dataType:
-            type: Bigint
-        - name: c_name
-          dataType:
-            type: String
-        - name: c_address
-          dataType:
-            type: String
-        - name: c_nationkey
-          dataType:
-            type: Bigint
-        - name: c_phone
-          dataType:
-            type: String
-        - name: c_acctbal
-          dataType:
-            type: Decimal
-        - name: c_mktsegment
-          dataType:
-            type: String
-        - name: c_comment
-          dataType:
-            type: String
+        fields: []
       description: null
       author: poojas@prophecy.io
       createdAt: '2023-06-16 10:13:03'
     - name: nation
       schema:
         providerType: databricks
-        fields:
-        - name: n_nationkey
-          dataType:
-            type: Bigint
-        - name: n_name
-          dataType:
-            type: String
-        - name: n_regionkey
-          dataType:
-            type: Bigint
-        - name: n_comment
-          dataType:
-            type: String
+        fields: []
       description: null
       author: poojas@prophecy.io
       createdAt: '2023-06-16 10:13:04'
@@ -419,74 +388,14 @@ sqlSources:
     - name: reportscd1
       schema:
         providerType: databricks
-        fields:
-        - name: Name
-          dataType:
-            type: String
-        - name: Income
-          dataType:
-            type: Bigint
-        - name: LoanTotal
-          dataType:
-            type: Bigint
-        - name: FicoScore
-          dataType:
-            type: Bigint
-        - name: FicoValidFrom
-          dataType:
-            type: Date
-        - name: FicoValidTo
-          dataType:
-            type: Date
-        - name: minFlag
-          dataType:
-            type: Boolean
-        - name: maxFlag
-          dataType:
-            type: Boolean
-        - name: previousFicoScore
-          dataType:
-            type: Bigint
-        - name: DTIpercentage
-          dataType:
-            type: Decimal
+        fields: []
       description: null
       author: poojas@prophecy.io
       createdAt: '2023-06-16 10:08:13'
     - name: reportscd2
       schema:
         providerType: databricks
-        fields:
-        - name: Name
-          dataType:
-            type: String
-        - name: Income
-          dataType:
-            type: Bigint
-        - name: LoanTotal
-          dataType:
-            type: Bigint
-        - name: FicoScore
-          dataType:
-            type: Bigint
-        - name: FicoValidFrom
-          dataType:
-            type: Date
-        - name: FicoValidTo
-          dataType:
-            type: Date
-        - name: minFlag
-          dataType:
-            type: Boolean
-        - name: maxFlag
-          dataType:
-            type: Boolean
-        - name: previousFicoScore
-          dataType:
-            type: Bigint
-        - name: DTIpercentage
-          dataType:
-            type: Decimal
+        fields: []
       description: null
       author: poojas@prophecy.io
       createdAt: '2023-06-16 10:08:14'
