@@ -7,3 +7,7 @@ Release snowflake DBT job on Prophecy Managed Airflow in Prod
 *** Release notes for version: 2.0 ***
 
 Adding Job for snowflake
+
+*** Release notes for version: 3.0 ***
+
+frgrg

@@ -1,6 +1,6 @@
 name: sql_dbx_project
 description: ''
-version: 0.0.1
+version: '3.0'
 author: null
 language: sql
 buildSystem: ''
