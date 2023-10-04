@@ -20,10 +20,88 @@ functions:
   udafs: {}
   expressions: {}
 subgraphs: {}
-sqlModels: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/Failed_orders:
+    name: Failed_orders
+    schema:
+      providerType: Snowflake
+      fields:
+      - name: STATUS
+        dataType:
+          type: String
+      - name: ORDER_DATE
+        dataType:
+          type: Date
+      - name: LAST_NAME
+        dataType:
+          type: String
+      - name: FIRST_NAME
+        dataType:
+          type: String
+      - name: ORDER_ID
+        dataType:
+          type: Number
+      - name: CUSTOMER_ID
+        dataType:
+          type: Number
+      - name: PAYMENTMETHOD
+        dataType:
+          type: String
+      - name: PAYMENT_STATUS
+        dataType:
+          type: String
+      - name: AMOUNT
+        dataType:
+          type: Number
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - models/Failed_orders.sql
+    - .prophecy/ide/models/Failed_orders.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-10-04 11:40:00'
 sqlMacros: {}
 sqlSeeds: {}
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/POOJA_JAFFLE_SHOP:
+    name: POOJA.JAFFLE_SHOP
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-10-04 11:40:00'
+    tables:
+    - name: CUSTOMERS
+      schema:
+        providerType: databricks
+        fields: []
+      description: null
+      author: poojas@prophecy.io
+      createdAt: '2023-10-04 11:40:00'
+    - name: ORDERS
+      schema:
+        providerType: databricks
+        fields: []
+      description: null
+      author: poojas@prophecy.io
+      createdAt: '2023-10-04 11:40:00'
+  .prophecy/metadata/sqlsources/POOJA_STRIPE:
+    name: POOJA.STRIPE
+    description: null
+    author: poojas@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-10-04 11:40:00'
+    tables:
+    - name: PAYMENT
+      schema:
+        providerType: databricks
+        fields: []
+      description: null
+      author: poojas@prophecy.io
+      createdAt: '2023-10-04 11:40:00'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
